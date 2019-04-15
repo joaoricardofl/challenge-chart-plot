@@ -1,0 +1,27 @@
+/* Header components */
+
+.header{  background-color: darkgray;  }
+
+.name{
+    padding: 5px;
+    padding-top: 10px;
+}
+
+
+/* Body - components */
+
+.data_input{  margin: 0px;  }
+
+.chart-wrapper{ height: 100%; }
+
+
+
+/* Footer components */
+
+.footer{
+    background-color: darkgray;
+    padding: 10px;
+    height: 56px;
+    position: fixed;
+    bottom: 0px;
+}
