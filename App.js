@@ -99,7 +99,7 @@ class App extends Component {
             data = data.replace(/, /g, ', "')
             data = data.replace(/'/g, '"')
             data = data.replace(/""/g, '"')
-            data = JSON.parse(data) // Parsing the data
+            data = JSON.parse(data) // Parsing the data, watch out for the amount of data parsed, because this function is synchronous
             
 
             if (data.timestamp === undefined) { console.log("Timestamp wasn't defined") }
@@ -267,7 +267,7 @@ class App extends Component {
                                     margin={{ top: 20, right: 20, bottom: 60, left: 20, }} >
                                     <CartesianGrid />
         
-                                    // It was chosen to use the conditional rendering to select the boundaries of the chart
+                                    {/* It was chosen to use the conditional rendering to select the boundaries of the chart*/}
                                     {(this.state.span === undefined) &&
                                     <XAxis type="number" dataKey="x" name="Timestamp" unit="ms" type="number"/>
                                     }
